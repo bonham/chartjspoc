@@ -1,11 +1,16 @@
 {
-  "name": "chartjs",
-  "version": "0.0.0",
+  "name": "chartjspoc",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "develop": "nodemon ./bin/www",
+    "test": "jest",
+    "watch": "watchify client/main.js -o public/javascripts/capp.js -v",
+    "build": "browserify client/main.js -o public/javascripts/capp.js"
   },
   "dependencies": {
+    "chart.js": "^2.9.3",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "express": "~4.16.1",
