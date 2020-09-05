@@ -17,4 +17,4 @@ var getParams = function (url) {
 	return params;
 };
 
-module.exports = getParams
+export { getParams }
