@@ -1,4 +1,9 @@
-var Chart = require('chart.js');
+const getParams = require('./michaelshelpers')
+
+let p = getParams(window.location.href)
+console.log(p)
+
+import Chart from 'chart.js';
 var ctx = document.getElementById('myChart').getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'bar',

@@ -6,14 +6,16 @@
     "start": "node ./bin/www",
     "develop": "nodemon ./bin/www",
     "test": "jest",
-    "watch": "watchify client/cmain.js -o public/javascripts/cmain.js -v",
-    "build": "browserify client/cmain.js -o public/javascripts/cmain.js"
+    "build": "parcel build -d public/javascripts --public-url /javascripts client/cmain.js",
+    "watch": "parcel watch -d public/javascripts --public-url /javascripts client/cmain.js"
   },
   "dependencies": {
     "chart.js": "^2.9.3",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "express": "~4.16.1",
+    "helpers": "0.0.6",
+    "helpers.js": "^1.0.0",
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1",
     "pug": "2.0.0-beta11"

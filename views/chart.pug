@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  ul
+    li Chart A
+    li Chart B
+  canvas(id="myChart" width="400" height="400")
+  script(src="javascripts/cmain.js")
