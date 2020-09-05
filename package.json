@@ -6,8 +6,8 @@
     "start": "node ./bin/www",
     "develop": "nodemon ./bin/www",
     "test": "jest",
-    "watch": "watchify client/main.js -o public/javascripts/capp.js -v",
-    "build": "browserify client/main.js -o public/javascripts/capp.js"
+    "watch": "watchify client/cmain.js -o public/javascripts/cmain.js -v",
+    "build": "browserify client/cmain.js -o public/javascripts/cmain.js"
   },
   "dependencies": {
     "chart.js": "^2.9.3",
